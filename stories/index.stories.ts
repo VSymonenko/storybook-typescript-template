@@ -1,13 +1,19 @@
+import { useEffect } from '@storybook/client-api';
+
 export default {
   title: 'Demo',
 };
 
-export const Heading = (): string => '<h1>Hello World</h1>';
+export const Hello = () => {
+  const h1 = document.createElement('h1');
+  h1.innerText = 'Hello world!';
+  return h1;
+}
 
-export const Button = () => {
-  const btn = document.createElement('button');
-  btn.type = 'button';
-  btn.innerText = 'Hello Button';
-  btn.addEventListener('click', e => console.log(e));
-  return btn;
-};
+export const UseEffect = () => {
+  const div = document.createElement('div');
+  useEffect(() => {
+    div.innerHTML = 'Element mounted!';
+  });
+  return div;
+}
