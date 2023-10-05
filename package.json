@@ -14,7 +14,7 @@
   "dependencies": {},
   "devDependencies": {
     "@babel/core": "^7.10.3",
-    "@storybook/html": "^6.5.13",
+    "@storybook/html": "^7.4.6",
     "@storybook/preset-typescript": "^3.0.0",
     "babel-loader": "^8.1.0",
     "fork-ts-checker-webpack-plugin": "^5.0.4",
